@@ -48,7 +48,7 @@ h6 {
 /* Paragraphs */
 p {
   margin: 0 0 .5em 0;
-  max-width: 35em;
+  max-width: 75em;
 }
 
 /* LINKS */
@@ -143,7 +143,7 @@ form input[type="submit"]:hover {
 }
 
 .btn-white{
-  background:#fff;
+  background:rgb(237, 255, 228);
   color:#000;
 }
 
@@ -446,6 +446,13 @@ footer {
 section {
   padding: 3em 0;
 }
+
+.buttons
+  position: fixed
+  left: 50%
+  transform: translateX(-50%)
+  bottom: 10px
+
 
 /* MENU BUTTON */
 
