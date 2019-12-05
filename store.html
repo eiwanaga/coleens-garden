@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
 <!-- Link Swiper's CSS -->
-<link rel="stylesheet" href="../package/css/swiper.min.css">
+<link rel="stylesheet" href="js/swiper/package/css/swiper.min.css">
 
 <!-- MAIN CSS -->
 <link href="css/style.css" rel="stylesheet" type="text/css" />
@@ -63,19 +63,19 @@
                 <!-- Swiper -->
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="img/gallery1.jpg" />Slide 1</div>
-                        <div class="swiper-slide"><img src="img/gallery1.jpg" />Slide 2</div>
-                        <div class="swiper-slide">Slide 3</div>
-                        <div class="swiper-slide">Slide 4</div>
-                        <div class="swiper-slide">Slide 5</div>
-                        <div class="swiper-slide">Slide 6</div>
-                        <div class="swiper-slide">Slide 7</div>
-                        <div class="swiper-slide">Slide 8</div>
-                        <div class="swiper-slide">Slide 9</div>
-                        <div class="swiper-slide">Slide 10</div>
+                        <div class="swiper-slide"><img src="img/latest1.jpg" /></div>
+                        <div class="swiper-slide"><img src="img/latest2.jpg" /></div>
+                        <div class="swiper-slide"><img src="img/latest3.jpg" /></div>
+                        <div class="swiper-slide"><img src="img/latest4.jpg" /></div>
+                        <div class="swiper-slide"><img src="img/latest5.jpg" /></div>
+                        <div class="swiper-slide"><img src="img/latest6.jpg" /></div>
+                        <div class="swiper-slide"><img src="img/latest7.jpg" /></div>
                     </div>
                     <!-- Add Pagination -->
                     <div class="swiper-pagination"></div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
 
             </body>
@@ -102,14 +102,13 @@
 
 
 <!-- Swiper JS -->
-<script src="../package/js/swiper.min.js"></script>
+<script src="js/swiper/package/js/swiper.js"></script>
 
 <!-- Initialize Swiper -->
 <script>
     var swiper = new Swiper('.swiper-container', {
         slidesPerView: 3,
         spaceBetween: 30,
-        freeMode: true,
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
