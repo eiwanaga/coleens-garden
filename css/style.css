@@ -11,7 +11,7 @@ body {
   color: rgb(122, 0, 112);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 { 
   margin: .5em 0;
 }
 
@@ -49,10 +49,11 @@ h6 {
 p {
   margin: 0 0 .5em 0;
   max-width: 75em;
+  color: rgb(0, 51, 0);
 }
 
 /* LINKS */
-a { color: rgb(255, 255, 255); text-decoration: none }
+a { color: rgb(122, 0, 112); text-decoration: none }
 a:hover { color: rgb(83, 0, 76); text-decoration: underline }
 a:focus { color: rgb(144, 179, 144) }
 a:visited { color: rgb(144, 179, 144) }
@@ -132,14 +133,14 @@ form input[type="submit"]:hover {
 .btn:link,
 .btn:visited{
   text-decoration: none;
-  text-transform:uppercase;
-  position:relative;
-  top:0;
-  left:0;
-  padding:20px 40px;
-  border-radius:100px;
-  display:inline-block;
-  transition: all .5s;
+  text-transform: uppercase;
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 1.5em 3em;
+  border-radius: 100em;
+  display: inline-block;
+  transition: all .9s;
 }
 
 .btn-white{
@@ -154,30 +155,29 @@ form input[type="submit"]:hover {
 
 .btn:active{
   box-shadow:0px 5px 10px rgba(0,0,0,0.2)
-  transform:translateY(-1px);
 }
 
 .btn-bottom-animation-1{
-  animation:comeFromBottom 1s ease-out .8s;
+  animation:comeFromBottom 6s ease-out .8s;
 }
 
 .btn::after{
-  content:"";
+  content: "";
   text-decoration: none;
-  text-transform:uppercase;
-  position:absolute;
-  width:100%;
-  height:100%;
-  top:0;
-  left:0;
-  border-radius:100px;
-  display:inline-block;
-  z-index:-1;
+  text-transform: uppercase;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 100em;
+  display: inline-block;
+  z-index: -1;
   transition: all .5s;
 }
 
 .btn-white::after {
-    background: #fff;
+    background: rgb(255, 255, 255);
 }
 
 .btn-animation-1:hover::after {
@@ -308,8 +308,8 @@ body.demo:before {
 @media (min-width: 768px) {
 
   /* Inherit Medium/Tablet CSS from Above */
-  body {
-  }
+  /* body {
+  } */
 
   body.demo:before {
       content: 'Medium (768-1049px)';
@@ -370,7 +370,7 @@ header, footer {
 
 header a, footer a {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: #fff;
 }
 
 .site-identity h1 {
@@ -386,7 +386,6 @@ header a, footer a {
 
 .site-navigation {
   padding-top: 0em;
-  background-color: rgb(99, 0, 86);
   text-align: center;
 }
 
@@ -398,6 +397,7 @@ header a, footer a {
 
 .site-navigation li {
   display: inline-block;
+  font-size: 1.25em;
 }
 
 .site-navigation a {
@@ -405,8 +405,8 @@ header a, footer a {
   padding: 1em 2em;
   transition: all .4s ease;
   text-decoration: none;
-  color: rgb(255, 255, 255);
-  padding: 1em;
+  color: #fff;
+  padding: 2em;
 }
 
 @media (max-width: 767px) {
@@ -428,13 +428,20 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 8em 1em;
-  margin: 2em 0;
+  margin: -10em 0 2em 0;
   color: white;
 }
 
 .hero h1 {
-  font-size: 3.5em;
+  font-size: 6em;
   color: white;
+  padding: 0;
+}
+
+.hero h2 {
+  font-size: 4em;
+  color: white;
+  padding: .5em;
 }
 
 .hero .button .button-alt {
@@ -445,14 +452,8 @@ footer {
 
 section {
   padding: 3em 0;
+  overflow-x: hidden;
 }
-
-.buttons
-  position: fixed
-  left: 50%
-  transform: translateX(-50%)
-  bottom: 10px
-
 
 /* MENU BUTTON */
 
@@ -466,7 +467,7 @@ section {
 /* NAVICON */
 
 .navicon {
-  color: rgba(255,255,255,0);
+  color: #fff;
   top: 1.8em;
 }
 
@@ -475,7 +476,7 @@ section {
   content: "";
  /* background: image(.svg); */
   font-size: 1.5em;
-  color: rgba(0,0,0,1);
+  color: #fff;
   display: inline-block;
   margin-left: .5em;
 }
@@ -539,6 +540,32 @@ footer {
   border-top: 1px solid #ddd;
   padding-top: 1em;
   padding-bottom: 1em;
+}
+
+/* SWIPER */
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
 }
 
 /* FORMS */
