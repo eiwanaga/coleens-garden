@@ -55,8 +55,8 @@ p {
 /* LINKS */
 a { color: rgb(122, 0, 112); text-decoration: none }
 a:hover { color: rgb(83, 0, 76); text-decoration: underline }
-a:focus { color: rgb(144, 179, 144) }
-a:visited { color: rgb(144, 179, 144) }
+a:focus { color: rgb(32, 0, 30) }
+a:visited { color: rgb(58, 0, 53) }
 
 /* HELPERS */
 
